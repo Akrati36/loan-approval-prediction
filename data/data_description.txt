@@ -1,0 +1,41 @@
+# Loan Approval Prediction - Data Description
+
+## Dataset Overview
+This dataset contains information about loan applications and their approval status.
+
+## Features Description
+
+### Categorical Features:
+1. **Gender**: Male/Female
+2. **Married**: Yes/No - Marital status of applicant
+3. **Dependents**: 0/1/2/3+ - Number of dependents
+4. **Education**: Graduate/Not Graduate - Education level
+5. **Self_Employed**: Yes/No - Employment status
+6. **Property_Area**: Urban/Semiurban/Rural - Location of property
+
+### Numerical Features:
+1. **ApplicantIncome**: Income of the applicant (in currency units)
+2. **CoapplicantIncome**: Income of the co-applicant (in currency units)
+3. **LoanAmount**: Loan amount requested (in thousands)
+4. **Loan_Amount_Term**: Term of loan in months (typically 360)
+5. **Credit_History**: Credit history meets guidelines (1=Yes, 0=No)
+
+### Target Variable:
+- **Loan_Status**: Y (Approved) / N (Rejected)
+
+## Data Statistics
+- Total Samples: ~1000
+- Features: 11
+- Target Classes: 2 (Binary Classification)
+- Missing Values: ~5% in LoanAmount
+
+## Class Distribution
+- Approved (Y): ~65-70%
+- Rejected (N): ~30-35%
+- **Note**: Dataset is imbalanced, requiring special handling techniques
+
+## Use Cases
+- Credit risk assessment
+- Loan approval automation
+- Financial decision support systems
+- ML classification practice
