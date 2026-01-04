@@ -10,8 +10,26 @@ This project demonstrates end-to-end ML workflow for loan approval prediction, c
 - **Multiple ML Models**: Logistic Regression, Random Forest, XGBoost, SVM
 - **Feature Engineering**: Data preprocessing, encoding, scaling
 - **Model Evaluation**: Confusion Matrix, Classification Report, ROC Curves
+- **🌟 Live Demo**: Interactive web app with Streamlit
 
 Perfect for **Data Analyst + ML Engineer** roles!
+
+## 🚀 Live Demo
+
+Try the interactive demo: [Launch Demo](DEMO.md)
+
+```bash
+# Run locally
+pip install -r requirements-streamlit.txt
+streamlit run app.py
+```
+
+**Demo Features:**
+- 📝 Interactive loan application form
+- 🎯 Real-time approval prediction
+- 📊 Probability visualization
+- 💡 Personalized recommendations
+- 📈 Feature importance analysis
 
 ## 📊 Dataset Features
 
@@ -23,12 +41,14 @@ Perfect for **Data Analyst + ML Engineer** roles!
 
 - **Python 3.8+**
 - **Libraries**: pandas, numpy, scikit-learn, imbalanced-learn, xgboost, matplotlib, seaborn
+- **Web App**: Streamlit, Plotly
 - **Jupyter Notebook** for interactive analysis
 
 ## 📁 Project Structure
 
 ```
 loan-approval-prediction/
+├── app.py                      # Streamlit web app (LIVE DEMO)
 ├── data/
 │   ├── loan_data.csv
 │   └── data_description.txt
@@ -43,6 +63,8 @@ loan-approval-prediction/
 ├── models/
 │   └── saved_models/
 ├── requirements.txt
+├── requirements-streamlit.txt
+├── DEMO.md
 ├── README.md
 └── main.py
 ```
@@ -62,13 +84,19 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
+
+# For live demo
+pip install -r requirements-streamlit.txt
 ```
 
 ### Run the Project
 
 ```bash
-# Run complete pipeline
+# Run complete ML pipeline
 python main.py
+
+# Run live demo
+streamlit run app.py
 
 # Or use Jupyter notebooks for step-by-step analysis
 jupyter notebook
@@ -115,6 +143,13 @@ jupyter notebook
 - ROC-AUC Curves
 - Precision-Recall Curves
 
+### 6. Live Demo App
+- Interactive web interface
+- Real-time predictions
+- Visual probability gauge
+- Feature importance charts
+- Personalized recommendations
+
 ## 📊 Visualizations
 
 - Feature correlation heatmap
@@ -122,6 +157,7 @@ jupyter notebook
 - Confusion matrices
 - ROC curves
 - Feature importance charts
+- Interactive Plotly dashboards
 
 ## 🎓 Learning Outcomes
 
@@ -131,6 +167,22 @@ jupyter notebook
 - Feature engineering and selection
 - Model comparison and selection
 - Production-ready ML pipeline
+- Build interactive ML web apps
+
+## 🌐 Deploy Your Demo
+
+### Streamlit Cloud (FREE)
+1. Fork this repository
+2. Go to [share.streamlit.io](https://share.streamlit.io)
+3. Connect your GitHub account
+4. Deploy `app.py`
+5. Share your live demo link!
+
+### Other Options
+- Heroku
+- AWS EC2
+- Google Cloud Run
+- Azure App Service
 
 ## 🤝 Contributing
 
@@ -150,7 +202,10 @@ This project is licensed under the MIT License.
 
 - Dataset inspired by real-world loan approval scenarios
 - Built for Data Analyst and ML Engineer interview preparation
+- Interactive demo powered by Streamlit
 
 ---
 
 ⭐ Star this repo if you find it helpful!
+
+🚀 [Try Live Demo](DEMO.md) | 📖 [Read Documentation](notebooks/01_EDA.ipynb) | 💻 [View Code](src/)
